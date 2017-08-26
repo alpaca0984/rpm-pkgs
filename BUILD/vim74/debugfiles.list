@@ -1,0 +1,32 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/bin
+%dir /usr/lib/debug/.build-id
+%dir /usr/lib/debug/.build-id/3c
+%dir /usr/lib/debug/.build-id/bb
+%dir /usr/lib/debug/.build-id/f8
+%dir /usr/lib/debug/.build-id/81
+%dir /usr/lib/debug/.dwz
+/usr/lib/debug/usr/bin/vi.debug
+/usr/lib/debug/usr/bin/vim.debug
+/usr/lib/debug/usr/bin/gvim.debug
+/usr/lib/debug/usr/bin/rvi.debug
+/usr/lib/debug/usr/bin/rview.debug
+/usr/lib/debug/usr/bin/view.debug
+/usr/lib/debug/usr/bin/ex.debug
+/usr/lib/debug/usr/bin/rvim.debug
+/usr/lib/debug/usr/bin/vimdiff.debug
+/usr/lib/debug/usr/bin/gview.debug
+/usr/lib/debug/usr/bin/gex.debug
+/usr/lib/debug/usr/bin/evim.debug
+/usr/lib/debug/usr/bin/gvimdiff.debug
+/usr/lib/debug/usr/bin/vimx.debug
+/usr/lib/debug/.build-id/3c/b29dc84ef69a5b0c87a4913963a7135077ae38
+/usr/lib/debug/.build-id/3c/b29dc84ef69a5b0c87a4913963a7135077ae38.debug
+/usr/lib/debug/.build-id/bb/c64bf01ef869b91c124a272d76a3fb5df3ea80
+/usr/lib/debug/.build-id/bb/c64bf01ef869b91c124a272d76a3fb5df3ea80.debug
+/usr/lib/debug/.build-id/f8/5f2e0e7e3c11201c62a294ca76d25f42e9cdc8
+/usr/lib/debug/.build-id/f8/5f2e0e7e3c11201c62a294ca76d25f42e9cdc8.debug
+/usr/lib/debug/.build-id/81/36c2fe36d72e1523bae87c1eabd9419657248f.debug
+/usr/lib/debug/.dwz/vim-7.4.160-1.el7_3.alpaca.1.x86_64
+/usr/src/debug/vim74
