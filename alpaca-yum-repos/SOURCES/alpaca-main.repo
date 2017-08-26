@@ -1,4 +1,0 @@
-[alpaca-main]
-name=alpaca-main.$releasever
-baseurl=https://raw.githubusercontent.com/alpaca0984/yum-repos/master
-gpgcheck=0
