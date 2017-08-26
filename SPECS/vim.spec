@@ -12,6 +12,7 @@
 %define withvimspell 0
 %define withhunspell 0
 %define withruby 1
+%define withlua 1
 
 %define baseversion 7.4
 %define vimdir vim74
@@ -231,6 +232,9 @@ BuildRequires: libselinux-devel
 %endif
 %if "%{withruby}" == "1"
 Buildrequires: ruby-devel ruby
+%endif
+%if "%{withlua}" == "1"
+Buildrequires: lua-devel
 %endif
 %if %{desktop_file}
 # for /usr/bin/desktop-file-install
@@ -556,6 +560,7 @@ export CXXFLAGS="%{optflags} -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOU
   --enable-gtk2-check --enable-gui=gtk2 \
   --with-compiledby="<bugzilla@redhat.com>" --enable-cscope \
   --with-modified-by="<bugzilla@redhat.com>" \
+  --enable-fail-if-missing \
 %if "%{withnetbeans}" == "1"
   --enable-netbeans \
 %else
@@ -570,6 +575,11 @@ export CXXFLAGS="%{optflags} -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOU
   --enable-rubyinterp=dynamic \
 %else
   --disable-rubyinterp \
+%endif
+%if "%{withlua}" == "1"
+  --enable-luainterp=dynamic \
+%else
+  --disable-luainterp \
 %endif
 
 make VIMRCLOC=/etc VIMRUNTIMEDIR=/usr/share/vim/%{vimdir} %{?_smp_mflags}
@@ -585,6 +595,7 @@ make clean
  --enable-cscope --with-modified-by="<bugzilla@redhat.com>" \
  --with-tlib=ncurses \
  --with-compiledby="<bugzilla@redhat.com>" \
+ --enable-fail-if-missing \
 %if "%{withnetbeans}" == "1"
   --enable-netbeans \
 %else
@@ -599,6 +610,11 @@ make clean
   --enable-rubyinterp=dynamic \
 %else
   --disable-rubyinterp \
+%endif
+%if "%{withlua}" == "1"
+  --enable-luainterp=dynamic \
+%else
+  --disable-luainterp \
 %endif
 
 make VIMRCLOC=/etc VIMRUNTIMEDIR=/usr/share/vim/%{vimdir} %{?_smp_mflags}
